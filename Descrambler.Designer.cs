@@ -37,6 +37,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.udBlocksize = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.udStrip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udBlocksize)).BeginInit();
             this.SuspendLayout();
@@ -44,17 +46,17 @@
             // tbxScrambled
             // 
             this.tbxScrambled.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxScrambled.Location = new System.Drawing.Point(12, 12);
+            this.tbxScrambled.Location = new System.Drawing.Point(12, 37);
             this.tbxScrambled.Multiline = true;
             this.tbxScrambled.Name = "tbxScrambled";
             this.tbxScrambled.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbxScrambled.Size = new System.Drawing.Size(911, 250);
+            this.tbxScrambled.Size = new System.Drawing.Size(911, 265);
             this.tbxScrambled.TabIndex = 0;
             // 
             // tbxDescrambled
             // 
             this.tbxDescrambled.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxDescrambled.Location = new System.Drawing.Point(12, 366);
+            this.tbxDescrambled.Location = new System.Drawing.Point(12, 438);
             this.tbxDescrambled.Multiline = true;
             this.tbxDescrambled.Name = "tbxDescrambled";
             this.tbxDescrambled.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -63,7 +65,7 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(12, 268);
+            this.btnLoad.Location = new System.Drawing.Point(12, 318);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(162, 41);
             this.btnLoad.TabIndex = 2;
@@ -74,7 +76,7 @@
             // lblSizeLabel
             // 
             this.lblSizeLabel.AutoSize = true;
-            this.lblSizeLabel.Location = new System.Drawing.Point(14, 329);
+            this.lblSizeLabel.Location = new System.Drawing.Point(14, 369);
             this.lblSizeLabel.Name = "lblSizeLabel";
             this.lblSizeLabel.Size = new System.Drawing.Size(100, 20);
             this.lblSizeLabel.TabIndex = 4;
@@ -90,7 +92,7 @@
             // 
             // udStrip
             // 
-            this.udStrip.Location = new System.Drawing.Point(222, 301);
+            this.udStrip.Location = new System.Drawing.Point(222, 341);
             this.udStrip.Name = "udStrip";
             this.udStrip.Size = new System.Drawing.Size(120, 26);
             this.udStrip.TabIndex = 6;
@@ -99,7 +101,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(218, 278);
+            this.label1.Location = new System.Drawing.Point(218, 318);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 20);
             this.label1.TabIndex = 7;
@@ -107,7 +109,7 @@
             // 
             // udBlocksize
             // 
-            this.udBlocksize.Location = new System.Drawing.Point(18, 717);
+            this.udBlocksize.Location = new System.Drawing.Point(12, 768);
             this.udBlocksize.Minimum = new decimal(new int[] {
             2,
             0,
@@ -126,17 +128,39 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 688);
+            this.label2.Location = new System.Drawing.Point(8, 739);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(450, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Block size; click up/down to descramble according to block size";
             // 
-            // Form1
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 410);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(179, 25);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Descrambled text";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(156, 25);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Scrambled text";
+            // 
+            // Descrambler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 802);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.udBlocksize);
             this.Controls.Add(this.label1);
@@ -146,7 +170,7 @@
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.tbxDescrambled);
             this.Controls.Add(this.tbxScrambled);
-            this.Name = "Form1";
+            this.Name = "Descrambler";
             this.Text = "DeScrambler ITC597";
             ((System.ComponentModel.ISupportInitialize)(this.udStrip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udBlocksize)).EndInit();
@@ -166,6 +190,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown udBlocksize;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
