@@ -39,6 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblLoadedFile = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.udStrip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udBlocksize)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +67,7 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(12, 318);
+            this.btnLoad.Location = new System.Drawing.Point(761, 318);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(162, 41);
             this.btnLoad.TabIndex = 2;
@@ -76,23 +78,23 @@
             // lblSizeLabel
             // 
             this.lblSizeLabel.AutoSize = true;
-            this.lblSizeLabel.Location = new System.Drawing.Point(14, 369);
+            this.lblSizeLabel.Location = new System.Drawing.Point(91, 339);
             this.lblSizeLabel.Name = "lblSizeLabel";
-            this.lblSizeLabel.Size = new System.Drawing.Size(100, 20);
+            this.lblSizeLabel.Size = new System.Drawing.Size(92, 20);
             this.lblSizeLabel.TabIndex = 4;
-            this.lblSizeLabel.Text = "Size (bytes): ";
+            this.lblSizeLabel.Text = "Size (bytes)";
             // 
             // lblSize
             // 
             this.lblSize.AutoSize = true;
-            this.lblSize.Location = new System.Drawing.Point(120, 329);
+            this.lblSize.Location = new System.Drawing.Point(189, 339);
             this.lblSize.Name = "lblSize";
             this.lblSize.Size = new System.Drawing.Size(0, 20);
             this.lblSize.TabIndex = 5;
             // 
             // udStrip
             // 
-            this.udStrip.Location = new System.Drawing.Point(222, 341);
+            this.udStrip.Location = new System.Drawing.Point(189, 368);
             this.udStrip.Name = "udStrip";
             this.udStrip.Size = new System.Drawing.Size(120, 26);
             this.udStrip.TabIndex = 6;
@@ -101,7 +103,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(218, 318);
+            this.label1.Location = new System.Drawing.Point(16, 368);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 20);
             this.label1.TabIndex = 7;
@@ -154,11 +156,31 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Scrambled text";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(145, 310);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "File";
+            // 
+            // lblLoadedFile
+            // 
+            this.lblLoadedFile.AutoSize = true;
+            this.lblLoadedFile.Location = new System.Drawing.Point(189, 310);
+            this.lblLoadedFile.Name = "lblLoadedFile";
+            this.lblLoadedFile.Size = new System.Drawing.Size(0, 20);
+            this.lblLoadedFile.TabIndex = 13;
+            // 
             // Descrambler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 802);
+            this.Controls.Add(this.lblLoadedFile);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -192,6 +214,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblLoadedFile;
     }
 }
 

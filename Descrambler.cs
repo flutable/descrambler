@@ -27,6 +27,7 @@ namespace Descramble597
             OpenFileDialog dlg = new OpenFileDialog();
             DialogResult result = dlg.ShowDialog();
             string file = dlg.FileName;
+            lblLoadedFile.Text = dlg.FileName;
             filestringoriginal = File.ReadAllText(file);
            // byte[] filebytes  = File.ReadAllBytes(file);   //ReadAllText won't read null bytes
 
